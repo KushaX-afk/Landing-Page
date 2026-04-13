@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bose — Sound That Moves You</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* ── CSS VARIABLES ── */
+    :root {
+      --black:   #0a0a0a;
+      --dark:    #111111;
+      --card:    #1a1a1a;
+      --border:  #2a2a2a;
+      --gold:    #c9a84c;
+      --gold-lt: #e2c27d;
+      --white:   #f5f5f5;
+      --muted:   #888888;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body:    'Outfit', sans-serif;
+    }
+
+    /* ── RESET & BASE ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5 { font-family: var(--font-display); letter-spacing: 0.04em; }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; width: 100%; object-fit: cover; }
+    section { padding: 90px 0; }
+
+    /* ── UTILITY ── */
+    .text-gold { color: var(--gold); }
+    .bg-card   { background: var(--card); }
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 12px;
+    }
+    .section-heading {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1;
+      color: var(--white);
+    }
+    .divider {
+      width: 56px; height: 3px;
+      background: var(--gold);
+      margin: 18px 0 28px;
+    }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar-brand {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 0.15em;
+      color: var(--white) !important;
+    }
+    .navbar-brand span { color: var(--gold); }
+    .nav-link {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted) !important;
+      padding: 28px 16px !important;
+      transition: color 0.25s;
+    }
+    .nav-link:hover { color: var(--white) !important; }
+    .navbar-toggler { border-color: var(--gold); }
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--black);
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 70% 50%, rgba(201,168,76,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-img-col {
+      position: absolute;
+      right: 0; top: 0; bottom: 0;
+      width: 52%;
+      overflow: hidden;
+    }
+    .hero-img-col img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.55;
+      transition: transform 8s ease;
+    }
+    .hero-img-col::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, var(--black) 0%, transparent 60%);
+    }
+    .hero-content { position: relative; z-index: 2; }
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 6px 16px;
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      line-height: 0.92;
+      color: var(--white);
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 420px;
+      margin: 24px 0 40px;
+      line-height: 1.7;
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--black);
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 14px 34px;
+      border: 2px solid var(--gold);
+      border-radius: 0;
+      transition: all 0.28s;
+      display: inline-block;
+    }
+    .btn-gold:hover {
+      background: transparent;
+      color: var(--gold);
+    }
+    .btn-outline-gold {
+      background: transparent;
+      color: var(--gold);
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 14px 34px;
+      border: 2px solid var(--gold);
+      border-radius: 0;
+      transition: all 0.28s;
+      display: inline-block;
+    }
+    .btn-outline-gold:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 60px;
+      padding-top: 36px;
+      border-top: 1px solid var(--border);
+    }
+    .hero-stat-num {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .hero-stat-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ── MARQUEE TICKER ── */
+    .ticker {
+      background: var(--gold);
+      padding: 12px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .ticker-track {
+      display: inline-flex;
+      animation: ticker 22s linear infinite;
+    }
+    .ticker-item {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      letter-spacing: 0.2em;
+      color: var(--black);
+      padding: 0 40px;
+    }
+    .ticker-dot { color: rgba(0,0,0,0.3); }
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ── ABOUT SECTION ── */
+    .about-img-wrap {
+      position: relative;
+    }
+    .about-img-wrap img {
+      height: 480px;
+      object-fit: cover;
+    }
+    .about-img-badge {
+      position: absolute;
+      bottom: -20px; right: -20px;
+      width: 120px; height: 120px;
+      background: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .about-img-badge .num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--black);
+      line-height: 1;
+    }
+    .about-img-badge .lbl {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--black);
+      text-align: center;
+    }
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .about-icon {
+      width: 46px; height: 46px;
+      flex-shrink: 0;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      color: var(--gold);
+    }
+
+    /* ── PRODUCTS ── */
+    .product-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 48px rgba(0,0,0,0.5);
+    }
+    .product-card .img-wrap {
+      height: 220px;
+      overflow: hidden;
+      background: #161616;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .product-card .img-wrap img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .product-card:hover .img-wrap img { transform: scale(1.06); }
+    .product-card .card-body { padding: 22px 24px; }
+    .product-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .product-card h5 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    .product-card p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .product-price {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--gold);
+    }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--dark); }
+    .skill-row { margin-bottom: 20px; }
+    .skill-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .skill-label span { color: var(--gold); }
+    .progress {
+      height: 5px;
+      background: var(--border);
+      border-radius: 0;
+      overflow: visible;
+    }
+    .progress-bar {
+      background: linear-gradient(to right, var(--gold), var(--gold-lt));
+      border-radius: 0;
+      transition: width 1.4s cubic-bezier(0.4,0,0.2,1);
+      width: 0;
+      position: relative;
+    }
+    .progress-bar::after {
+      content: '';
+      position: absolute;
+      right: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 10px; height: 10px;
+      background: var(--gold-lt);
+      border-radius: 50%;
+    }
+    .skill-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 32px 28px;
+      text-align: center;
+      transition: border-color 0.3s;
+    }
+    .skill-card:hover { border-color: var(--gold); }
+    .skill-card-icon {
+      font-size: 2.2rem;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .skill-card h5 { font-size: 1.3rem; margin-bottom: 8px; }
+    .skill-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── CAROUSEL / TESTIMONIALS ── */
+    #testimonials { background: var(--black); }
+    .carousel-uniform {
+      height: 380px;
+    }
+    .carousel-item.carousel-uniform { height: 380px; }
+    .testimonial-slide {
+      height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 60px;
+      text-align: center;
+    }
+    .testimonial-quote {
+      font-size: 3rem;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 20px;
+      font-family: Georgia, serif;
+    }
+    .testimonial-text {
+      font-size: 1.1rem;
+      color: var(--white);
+      line-height: 1.75;
+      max-width: 640px;
+      margin: 0 auto 24px;
+    }
+    .testimonial-author {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .testimonial-role {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    /* Override carousel indicators color */
+    .carousel-indicators [data-bs-target] {
+      background-color: var(--border);
+      width: 36px; height: 3px;
+      border: none;
+      opacity: 1;
+    }
+    .carousel-indicators .active { background-color: var(--gold); }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(0.7) sepia(1) saturate(2) hue-rotate(5deg);
+    }
+
+    /* ── CONTACT FORM ── */
+    #contact { background: var(--dark); }
+    .form-control, .form-select {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0;
+      color: var(--white);
+      padding: 14px 18px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      transition: border-color 0.25s;
+    }
+    .form-control::placeholder { color: var(--muted); }
+    .form-control:focus, .form-select:focus {
+      background: var(--card);
+      border-color: var(--gold);
+      box-shadow: none;
+      color: var(--white);
+      outline: none;
+    }
+    .form-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .form-check-input {
+      background-color: var(--card);
+      border-color: var(--border);
+      border-radius: 0;
+    }
+    .form-check-input:checked {
+      background-color: var(--gold);
+      border-color: var(--gold);
+    }
+    .form-check-label { font-size: 0.85rem; color: var(--muted); }
+    .contact-info-item {
+      display: flex; align-items: flex-start; gap: 16px;
+      margin-bottom: 28px;
+    }
+    .contact-info-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 1rem;
+    }
+
+    /* ── ABOUT US SECTION ── */
+    #about-us { background: var(--black); }
+    .about-us-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 200px 200px;
+      gap: 10px;
+    }
+    .about-us-img-grid .img-main {
+      grid-row: span 2;
+      height: 100%;
+    }
+    .about-us-img-grid img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #050505;
+      border-top: 1px solid var(--border);
+      padding: 60px 0 32px;
+    }
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      letter-spacing: 0.15em;
+      color: var(--white);
+    }
+    .footer-brand span { color: var(--gold); }
+    .footer-tagline { font-size: 0.82rem; color: var(--muted); margin-top: 8px; }
+    .footer-heading {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+    .footer-social a {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 38px; height: 38px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 1rem;
+      margin-right: 8px;
+      transition: all 0.25s;
+    }
+    .footer-social a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 24px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* ── ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 991px) {
+      .hero-img-col { width: 100%; opacity: 0.15; }
+      .hero-img-col::after { background: var(--black); opacity: 0.1; }
+      .about-img-badge { right: 10px; bottom: 10px; }
+    }
+    @media (max-width: 767px) {
+      section { padding: 60px 0; }
+      .hero { min-height: 85vh; }
+      .hero-stats { gap: 24px; }
+      .testimonial-slide { padding: 36px 24px; }
+      .about-us-img-grid { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">B<span>O</span>SE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item ms-lg-3">
+          <a href="#about-us" class="btn-outline-gold" style="font-size:0.72rem; letter-spacing:0.18em; padding:10px 22px;">About Us</a>
+        </li>
+        <li class="nav-item ms-lg-2">
+          <a href="#contact" class="btn-gold" style="font-size:0.72rem; letter-spacing:0.18em; padding:10px 22px;">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-img-col">
+    <img src="asset/hero image.jpg" alt="Bose Hero Product"/>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 hero-content reveal">
+        <span class="hero-tag">Premium Audio Engineering</span>
+        <h1>HEAR<br/><em>EVERY</em><br/>DETAIL</h1>
+        <p>Experience sound the way the artist intended. Bose engineers the finest acoustic technology to make every listen feel like the first.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#products" class="btn-gold">Shop Now</a>
+          <a href="#about-us" class="btn-outline-gold">Our Story</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">60+</div>
+            <div class="hero-stat-label">Years of Innovation</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">180+</div>
+            <div class="hero-stat-label">Countries Worldwide</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">4K+</div>
+            <div class="hero-stat-label">Patents Filed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     TICKER
+════════════════════════════════════════ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">QuietComfort Ultra <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">SoundLink Max <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Bose Sport Earbuds <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Ultra Open Earbuds <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Home Speaker 500 <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Noise Cancelling Headphones 700 <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Frames Audio Sunglasses <span class="ticker-dot">◆</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">QuietComfort Ultra <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">SoundLink Max <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Bose Sport Earbuds <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Ultra Open Earbuds <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Home Speaker 500 <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Noise Cancelling Headphones 700 <span class="ticker-dot">◆</span></span>
+    <span class="ticker-item">Frames Audio Sunglasses <span class="ticker-dot">◆</span></span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     ABOUT — QUICK INTRO
+════════════════════════════════════════ -->
+<section id="about" style="background:var(--dark);">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <div class="about-img-wrap">
+          <img src="asset/h.png"About Bose" class="img-fluid"/>
+          <div class="about-img-badge">
+            <div class="num">60</div>
+            <div class="lbl">Years of Sound</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-heading">Better Sound<br/>Through Research</h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted); line-height:1.85; margin-bottom:36px;">Founded in 1964 by Dr. Amar G. Bose, we have been committed to one thing above all — developing the most advanced audio technologies in the world. Our engineers dedicate thousands of hours perfecting acoustics so you simply enjoy the music.</p>
+        <div class="about-feature">
+          <div class="about-icon"><i class="bi bi-award-fill"></i></div>
+          <div>
+            <h5 style="font-size:1.1rem; margin-bottom:4px;">Award-Winning Innovation</h5>
+            <p style="font-size:0.83rem; color:var(--muted); line-height:1.6; margin:0;">Consistently recognized by top audio and consumer technology organizations globally.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-icon"><i class="bi bi-cpu-fill"></i></div>
+          <div>
+            <h5 style="font-size:1.1rem; margin-bottom:4px;">Proprietary Technology</h5>
+            <p style="font-size:0.83rem; color:var(--muted); line-height:1.6; margin:0;">Over 4,000 patents covering noise cancellation, acoustic waveguides, and spatial audio.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="about-icon"><i class="bi bi-globe2"></i></div>
+          <div>
+            <h5 style="font-size:1.1rem; margin-bottom:4px;">Global Presence</h5>
+            <p style="font-size:0.83rem; color:var(--muted); line-height:1.6; margin:0;">Available in over 180 countries, trusted by audiophiles, professionals, and everyday listeners alike.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     PRODUCTS
+════════════════════════════════════════ -->
+<section id="products">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label">Our Collection</span>
+      <h2 class="section-heading">Featured Products</h2>
+      <div class="divider mx-auto"></div>
+    </div>
+    <div class="row g-4 mt-2">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="product-card">
+          <div class="img-wrap"><img src="asset/p2.png" alt="QuietComfort Ultra Headphones"/></div>
+          <div class="card-body">
+            <div class="product-tag">Headphones</div>
+            <h5>QuietComfort Ultra</h5>
+            <p>Our most premium wireless headphones featuring world-class noise cancellation and immersive audio.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="product-price">$429</span>
+              <a href="#" class="btn-gold" style="font-size:0.7rem; padding:10px 20px;">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="product-card">
+          <div class="img-wrap"><img src="asset/p1.webp" alt="SoundLink Max"/></div>
+          <div class="card-body">
+            <div class="product-tag">Speakers</div>
+            <h5>SoundLink Max</h5>
+            <p>Powerful portable speaker with deep bass, all-day battery life, and weather-resistant design.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="product-price">$399</span>
+              <a href="#" class="btn-gold" style="font-size:0.7rem; padding:10px 20px;">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="product-card">
+          <div class="img-wrap"><img src="asset/p3.png" alt="Ultra Open Earbuds"/></div>
+          <div class="card-body">
+            <div class="product-tag">Earbuds</div>
+            <h5>Ultra Open Earbuds</h5>
+            <p>Open-ear design letting you enjoy your music while staying aware of the world around you.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="product-price">$299</span>
+              <a href="#" class="btn-gold" style="font-size:0.7rem; padding:10px 20px;">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     TESTIMONIALS / FEEDBACK CAROUSEL
+     (using provided Bootstrap carousel code)
+════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center reveal mb-5">
+      <span class="section-label">Customer Feedback</span>
+      <h2 class="section-heading">What People Say</h2>
+      <div class="divider mx-auto"></div>
+    </div>
+
+    <!-- Bootstrap Carousel (uniform height enforced via CSS) -->
+    <div id="carouselExampleCaptions" class="carousel slide reveal" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="testimonial-slide">
+            <div class="inner">
+              <div class="testimonial-quote">&ldquo;</div>
+              <p class="testimonial-text">The QuietComfort Ultra headphones have completely changed my work-from-home life. The noise cancellation is unlike anything I've ever tried — pure silence, pure focus.</p>
+              <div class="testimonial-author">Sarah Mitchell</div>
+              <div class="testimonial-role">Sound Engineer, Los Angeles</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="testimonial-slide">
+            <div class="inner">
+              <div class="testimonial-quote">&ldquo;</div>
+              <p class="testimonial-text">I've owned many premium speakers, but the SoundLink Max is in a league of its own. The bass response at high volumes is absolutely breathtaking without any distortion.</p>
+              <div class="testimonial-author">James Okonkwo</div>
+              <div class="testimonial-role">Music Producer, London</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="testimonial-slide">
+            <div class="inner">
+              <div class="testimonial-quote">&ldquo;</div>
+              <p class="testimonial-text">Bose Ultra Open Earbuds gave me the freedom I was looking for — I can run through the city, hear traffic, and still enjoy great music. Incredible engineering.</p>
+              <div class="testimonial-author">Priya Sharma</div>
+              <div class="testimonial-role">Marathon Runner, Mumbai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End Carousel -->
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     SKILLS SECTION
+════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="text-center reveal mb-5">
+      <span class="section-label">Our Expertise</span>
+      <h2 class="section-heading">Core Capabilities</h2>
+      <div class="divider mx-auto"></div>
+    </div>
+
+    <!-- Skill Bars -->
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-6 reveal">
+        <h4 style="font-size:1.6rem; margin-bottom:32px;">Technical Mastery</h4>
+
+        <div class="skill-row">
+          <div class="skill-label">Noise Cancellation Technology <span>98%</span></div>
+          <div class="progress"><div class="progress-bar" data-width="98"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Acoustic Engineering <span>96%</span></div>
+          <div class="progress"><div class="progress-bar" data-width="96"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Wireless Audio Systems <span>94%</span></div>
+          <div class="progress"><div class="progress-bar" data-width="94"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Spatial Audio Processing <span>90%</span></div>
+          <div class="progress"><div class="progress-bar" data-width="90"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Battery & Power Efficiency <span>88%</span></div>
+          <div class="progress"><div class="progress-bar" data-width="88"></div></div>
+        </div>
+      </div>
+
+      <!-- Skill Cards -->
+      <div class="col-lg-6 reveal">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="bi bi-headphones"></i></div>
+              <h5>Headphones</h5>
+              <p>Industry-leading comfort and sound quality for every environment.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="bi bi-speaker-fill"></i></div>
+              <h5>Speakers</h5>
+              <p>Room-filling sound from portable to home entertainment systems.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="bi bi-earbuds"></i></div>
+              <h5>Earbuds</h5>
+              <p>Truly wireless earbuds built for sport, work, and everything in between.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="bi bi-wifi"></i></div>
+              <h5>Smart Audio</h5>
+              <p>Voice-assistant integration and seamless multi-device connectivity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     ABOUT US — DETAILED
+════════════════════════════════════════ -->
+<section id="about-us">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 reveal">
+        <div class="about-us-img-grid">
+          <div class="img-main"><img src="asset/bose1.png" h alt="Bose Lab"/></div>
+          <div><img src="asset/products.png" alt="Bose Product"/></div>
+          <div><img src="asset/eng.jpg" alt="Bose Engineer"/></div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal">
+        <span class="section-label">About Us</span>
+        <h2 class="section-heading">Six Decades of<br/>Pure Sound</h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted); line-height:1.85; margin-bottom:20px;">In 1964, Dr. Amar G. Bose was disappointed by the sound quality of a high-end stereo system he had just purchased. Determined to understand why, he began researching the science of psychoacoustics — the relationship between physical sound and human perception.</p>
+        <p style="color:var(--muted); line-height:1.85; margin-bottom:36px;">What started as a research project became a revolution in audio. Today, Bose Corporation employs thousands of engineers, researchers, and designers united by the same mission: to develop new ways of thinking about sound that challenge everything that came before.</p>
+        <div class="row g-3 mb-4">
+          <div class="col-6">
+            <div style="background:var(--card); border:1px solid var(--border); padding:20px 22px;">
+              <div style="font-family:var(--font-display); font-size:2rem; color:var(--gold);">1964</div>
+              <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">Founded by Dr. Amar Bose</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div style="background:var(--card); border:1px solid var(--border); padding:20px 22px;">
+              <div style="font-family:var(--font-display); font-size:2rem; color:var(--gold);">MIT</div>
+              <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">Research Origins</div>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn-gold">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     LEAD FORM / CONTACT
+════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="text-center reveal mb-5">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-heading">Contact Us</h2>
+      <div class="divider mx-auto"></div>
+    </div>
+
+    <div class="row g-5">
+      <!-- Contact Info -->
+      <div class="col-lg-4 reveal">
+        <h4 style="font-size:1.5rem; margin-bottom:28px;">We'd Love to Hear<br/>From You</h4>
+        <p style="color:var(--muted); font-size:0.88rem; line-height:1.8; margin-bottom:36px;">Whether you have a question about our products, need support, or just want to talk sound — our team is here for you.</p>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <div style="font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:4px;">Address</div>
+            <div style="font-size:0.87rem; color:var(--muted);">The Mountain, Framingham,<br/>Massachusetts, USA</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
+          <div>
+            <div style="font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:4px;">Email</div>
+            <div style="font-size:0.87rem; color:var(--muted);">support@bose.com</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <div style="font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:4px;">Phone</div>
+            <div style="font-size:0.87rem; color:var(--muted);">+1 (800) 999-2673</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lead Form (based on provided Bootstrap form code) -->
+      <div class="col-lg-8 reveal">
+        <div style="background:var(--card); border:1px solid var(--border); padding:48px 44px;">
+          <form>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label class="form-label" for="contactName">Full Name</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Your full name">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="exampleInputEmail1">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text" style="color:var(--muted); font-size:0.72rem;">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="contactPhone">Phone Number</label>
+                <input type="tel" class="form-control" id="contactPhone" placeholder="+1 (000) 000-0000">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="contactSubject">Subject</label>
+                <input type="text" class="form-control" id="contactSubject" placeholder="How can we help?">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="exampleInputPassword1">Your Message</label>
+                <textarea class="form-control" id="exampleInputPassword1" rows="5" placeholder="Tell us more about your inquiry..."></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I agree to receive updates and newsletters from Bose</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-gold w-100" style="display:block; text-align:center; padding:16px;">
+                  <i class="bi bi-send-fill me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">B<span>O</span>SE</div>
+        <p class="footer-tagline">Better Sound Through Research™</p>
+        <p style="font-size:0.82rem; color:var(--muted); margin-top:16px; line-height:1.7;">Dedicated to creating the world's most advanced audio products since 1964. Sound is everything.</p>
+        <div class="footer-social mt-24" style="margin-top:24px;">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Products</div>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#">Headphones</a></li>
+          <li><a href="#">Earbuds</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Smart Home</a></li>
+          <li><a href="#">Sunglasses</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">Support</div>
+        <ul class="footer-links list-unstyled">
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">Find a Store</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-heading">Newsletter</div>
+        <p style="font-size:0.82rem; color:var(--muted); margin-bottom:16px; line-height:1.7;">Get the latest news on Bose products, exclusive deals, and audio innovations.</p>
+        <div class="d-flex gap-0">
+          <input type="email" class="form-control" placeholder="Your email address" style="border-right:none;"/>
+          <button class="btn-gold flex-shrink-0" style="padding:14px 20px; white-space:nowrap;">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2025 Bose Corporation. All rights reserved.</span>
+      <div class="d-flex gap-3">
+        <a href="#" style="color:var(--muted); font-size:0.75rem;">Privacy Policy</a>
+        <a href="#" style="color:var(--muted); font-size:0.75rem;">Terms of Use</a>
+        <a href="#" style="color:var(--muted); font-size:0.75rem;">Cookie Settings</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  /* ── Scroll Reveal ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => observer.observe(r));
+
+  /* ── Skill Bar Animation ── */
+  const bars = document.querySelectorAll('.progress-bar[data-width]');
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.width = e.target.dataset.width + '%';
+        barObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  bars.forEach(b => barObserver.observe(b));
+
+  /* ── Navbar scroll shadow ── */
+  window.addEventListener('scroll', () => {
+    document.querySelector('.navbar').style.boxShadow =
+      window.scrollY > 40 ? '0 4px 32px rgba(0,0,0,0.5)' : 'none';
+  });
+
+  /* ── Smooth active nav link ── */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 80) current = sec.id;
+    });
+    navLinks.forEach(lnk => {
+      lnk.classList.remove('active');
+      if (lnk.getAttribute('href') === '#' + current) lnk.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

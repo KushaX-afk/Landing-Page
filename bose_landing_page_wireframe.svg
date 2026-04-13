@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 878.82 2122.16">
+  <!-- Generator: Adobe Illustrator 30.3.0, SVG Export Plug-In . SVG Version: 2.1.3 Build 182)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #444441;
+        stroke: #b4b2a9;
+      }
+
+      .st0, .st1 {
+        stroke-width: .5px;
+      }
+
+      .st2, .st3, .st4, .st5, .st6 {
+        fill: #c2c0b6;
+      }
+
+      .st3, .st7, .st8, .st4, .st5, .st6 {
+        isolation: isolate;
+      }
+
+      .st3, .st7, .st5 {
+        font-family: SegoeUI, 'Segoe UI';
+      }
+
+      .st3, .st4, .st6 {
+        font-size: 12px;
+      }
+
+      .st7 {
+        fill: #faf9f5;
+        font-size: 14px;
+      }
+
+      .st9 {
+        fill: none;
+      }
+
+      .st10, .st1 {
+        fill: #633806;
+      }
+
+      .st11 {
+        fill: #262624;
+      }
+
+      .st4 {
+        font-family: KozGoPr6N-Regular-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+      }
+
+      .st12 {
+        fill: #231f20;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        stroke: #ef9f27;
+      }
+
+      .st5 {
+        font-size: 8.38px;
+      }
+
+      .st6 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+    </style>
+  </defs>
+  <rect class="st12" x="32.48" y="21.07" width="813.91" height="2060"/>
+  <rect class="st11" x="102.43" y="41.07" width="640" height="48" rx="4" ry="4"/>
+  <rect class="st0" x="118.85" y="55.21" width="52" height="24" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st7" transform="translate(127.88 72.07)"><tspan x="0" y="0">BOSE</tspan></text>
+  </g>
+  <rect class="st11" x="442.43" y="55.07" width="48" height="20" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(450.35 67.07)"><tspan x="0" y="0">Home</tspan></text>
+  </g>
+  <rect class="st11" x="500.43" y="55.07" width="52" height="20" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(508.23 67.07)"><tspan x="0" y="0">Gallery</tspan></text>
+  </g>
+  <rect class="st11" x="562.43" y="55.07" width="58" height="20" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(570.24 67.07)"><tspan x="0" y="0">Services</tspan></text>
+  </g>
+  <rect class="st0" x="630.43" y="53.07" width="50" height="24" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(639.09 67.07)"><tspan x="0" y="0">About</tspan></text>
+  </g>
+  <rect class="st1" x="688.43" y="53.07" width="48" height="24" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(691.91 67.07)"><tspan x="0" y="0">Contact</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st4" transform="translate(118.43 53.07)"><tspan x="0" y="0">①</tspan></text>
+    <text class="st3" transform="translate(130.43 53.07)"><tspan x="0" y="0" xml:space="preserve"> Navbar</tspan></text>
+  </g>
+  <rect class="st11" x="102.43" y="101.07" width="640" height="200" rx="4" ry="4"/>
+  <rect class="st0" x="442.43" y="111.07" width="290" height="180" rx="3" ry="3"/>
+  <line class="st9" x1="442.43" y1="111.07" x2="732.43" y2="291.07"/>
+  <line class="st9" x1="732.43" y1="111.07" x2="442.43" y2="291.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(559.42 207.07)"><tspan x="0" y="0">img src=&quot;&quot;</tspan></text>
+  </g>
+  <rect class="st1" x="118.43" y="119.07" width="100" height="14" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(145.54 129.07)"><tspan x="0" y="0">tag label</tspan></text>
+  </g>
+  <rect class="st0" x="118.43" y="141.07" width="180" height="26" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(156.74 157.07)"><tspan x="0" y="0">HERO HEADLINE</tspan></text>
+  </g>
+  <rect class="st0" x="118.43" y="175.07" width="140" height="26" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(144.02 191.07)"><tspan x="0" y="0">SUBHEADLINE</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="209.07" width="200" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="118.43" y="221.07" width="180" height="8" rx="2" ry="2"/>
+  <rect class="st1" x="118.43" y="239.07" width="86" height="26" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(133.82 254.07)"><tspan x="0" y="0">Shop Now</tspan></text>
+  </g>
+  <rect class="st0" x="214.43" y="239.07" width="86" height="26" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(232.25 254.07)"><tspan x="0" y="0">Our Story</tspan></text>
+  </g>
+  <line class="st9" x1="118.43" y1="275.07" x2="402.43" y2="275.07"/>
+  <rect class="st1" x="118.43" y="281.07" width="54" height="12" rx="2" ry="2"/>
+  <rect class="st1" x="186.43" y="281.07" width="54" height="12" rx="2" ry="2"/>
+  <rect class="st1" x="254.43" y="281.07" width="54" height="12" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(125.68 291.07)"><tspan x="0" y="0">60+ yrs</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st3" transform="translate(189.25 291.07)"><tspan x="0" y="0">180 cntrs</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st3" transform="translate(260.35 291.07)"><tspan x="0" y="0">4K+ pat</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st4" transform="translate(108.52 113.88)"><tspan x="0" y="0">②</tspan></text>
+    <text class="st3" transform="translate(120.52 113.88)"><tspan x="0" y="0" xml:space="preserve"> Hero</tspan></text>
+  </g>
+  <rect class="st1" x="102.43" y="313.07" width="640" height="26"/>
+  <g class="st8">
+    <text class="st6" transform="translate(169.1 329.07)"><tspan x="0" y="0">◆</tspan></text>
+    <text class="st3" transform="translate(175.1 329.07)"><tspan x="0" y="0" xml:space="preserve"> QuietComfort Ultra </tspan></text>
+    <text class="st6" transform="translate(283.36 329.07)"><tspan x="0" y="0">◆</tspan></text>
+    <text class="st3" transform="translate(289.36 329.07)"><tspan x="0" y="0" xml:space="preserve"> SoundLink Max </tspan></text>
+    <text class="st6" transform="translate(376.98 329.07)"><tspan x="0" y="0">◆</tspan></text>
+    <text class="st3" transform="translate(382.98 329.07)"><tspan x="0" y="0" xml:space="preserve"> Ultra Open Earbuds </tspan></text>
+    <text class="st6" transform="translate(493.14 329.07)"><tspan x="0" y="0">◆</tspan></text>
+    <text class="st3" transform="translate(499.14 329.07)"><tspan x="0" y="0" xml:space="preserve"> Home Speaker 500 </tspan></text>
+    <text class="st6" transform="translate(606.08 329.07)"><tspan x="0" y="0">◆</tspan></text>
+    <text class="st3" transform="translate(612.08 329.07)"><tspan x="0" y="0" xml:space="preserve"> (scrolling)</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st4" transform="translate(688.25 328.07)"><tspan x="0" y="0">③</tspan></text>
+    <text class="st3" transform="translate(700.25 328.07)"><tspan x="0" y="0" xml:space="preserve"> Ticker</tspan></text>
+  </g>
+  <rect class="st11" x="102.43" y="355.07" width="640" height="180" rx="4" ry="4"/>
+  <rect class="st0" x="118.43" y="371.07" width="230" height="148" rx="3" ry="3"/>
+  <line class="st9" x1="118.43" y1="371.07" x2="348.43" y2="519.07"/>
+  <line class="st9" x1="348.43" y1="371.07" x2="118.43" y2="519.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(205.42 448.07)"><tspan x="0" y="0">img src=&quot;&quot;</tspan></text>
+  </g>
+  <rect class="st1" x="306.43" y="487.07" width="54" height="38" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(326.96 504.07)"><tspan x="0" y="0">60</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st3" transform="translate(319.82 517.07)"><tspan x="0" y="0">Years</tspan></text>
+  </g>
+  <rect class="st1" x="364.43" y="375.07" width="68" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st5" transform="translate(370.81 382.61)"><tspan x="0" y="0">section label</tspan></text>
+  </g>
+  <rect class="st0" x="364.43" y="392.07" width="180" height="16" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(395.04 404.07)"><tspan x="0" y="0">SECTION HEADING</tspan></text>
+  </g>
+  <rect class="st10" x="364.43" y="415.07" width="36" height="3"/>
+  <rect class="st0" x="364.43" y="427.07" width="28" height="28" rx="2" ry="2"/>
+  <rect class="st11" x="400.43" y="429.07" width="180" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="400.43" y="441.07" width="140" height="8" rx="2" ry="2"/>
+  <rect class="st0" x="364.43" y="463.07" width="28" height="28" rx="2" ry="2"/>
+  <rect class="st11" x="400.43" y="465.07" width="180" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="400.43" y="477.07" width="140" height="8" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st4" transform="translate(686.71 368.07)"><tspan x="0" y="0">④</tspan></text>
+    <text class="st3" transform="translate(698.71 368.07)"><tspan x="0" y="0" xml:space="preserve"> About</tspan></text>
+  </g>
+  <rect class="st11" x="102.43" y="551.07" width="640" height="200" rx="4" ry="4"/>
+  <rect class="st0" x="342.43" y="566.5" width="160" height="14.56" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(353.81 578.07)"><tspan x="0" y="0">FEATURED PRODUCTS</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="593.07" width="182" height="144" rx="4" ry="4"/>
+  <rect class="st0" x="118.43" y="593.07" width="182" height="72" rx="4" ry="4"/>
+  <line class="st9" x1="118.43" y1="593.07" x2="300.43" y2="665.07"/>
+  <line class="st9" x1="300.43" y1="593.07" x2="118.43" y2="665.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(181.42 632.07)"><tspan x="0" y="0">img src=&quot;&quot;</tspan></text>
+  </g>
+  <rect class="st1" x="126.43" y="673.07" width="60" height="8" rx="2" ry="2"/>
+  <rect class="st0" x="126.43" y="685.82" width="120" height="11.25" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(153.98 696.07)"><tspan x="0" y="0">Product title</tspan></text>
+  </g>
+  <rect class="st11" x="126.43" y="703.07" width="130" height="6" rx="2" ry="2"/>
+  <rect class="st1" x="126.43" y="715.07" width="40" height="10" rx="2" ry="2"/>
+  <rect class="st1" x="234.43" y="713.07" width="58" height="16" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(239.71 724.07)"><tspan x="0" y="0">Buy Now</tspan></text>
+  </g>
+  <rect class="st11" x="311.43" y="593.07" width="182" height="144" rx="4" ry="4"/>
+  <rect class="st0" x="311.43" y="593.07" width="182" height="72" rx="4" ry="4"/>
+  <line class="st9" x1="311.43" y1="593.07" x2="493.43" y2="665.07"/>
+  <line class="st9" x1="493.43" y1="593.07" x2="311.43" y2="665.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(374.42 632.07)"><tspan x="0" y="0">img src=&quot;&quot;</tspan></text>
+  </g>
+  <rect class="st1" x="319.43" y="673.07" width="60" height="8" rx="2" ry="2"/>
+  <rect class="st0" x="319.43" y="685.82" width="120" height="11.25" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(346.98 696.07)"><tspan x="0" y="0">Product title</tspan></text>
+  </g>
+  <rect class="st11" x="319.43" y="703.07" width="130" height="6" rx="2" ry="2"/>
+  <rect class="st1" x="319.43" y="715.07" width="40" height="10" rx="2" ry="2"/>
+  <rect class="st1" x="427.43" y="713.07" width="58" height="16" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(432.71 724.07)"><tspan x="0" y="0">Buy Now</tspan></text>
+  </g>
+  <rect class="st11" x="504.43" y="593.07" width="182" height="144" rx="4" ry="4"/>
+  <rect class="st0" x="504.43" y="593.07" width="182" height="72" rx="4" ry="4"/>
+  <line class="st9" x1="504.43" y1="593.07" x2="686.43" y2="665.07"/>
+  <line class="st9" x1="686.43" y1="593.07" x2="504.43" y2="665.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(567.42 632.07)"><tspan x="0" y="0">img src=&quot;&quot;</tspan></text>
+  </g>
+  <rect class="st1" x="512.43" y="673.07" width="60" height="8" rx="2" ry="2"/>
+  <rect class="st0" x="512.43" y="685.82" width="120" height="11.25" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(539.98 696.07)"><tspan x="0" y="0">Product title</tspan></text>
+  </g>
+  <rect class="st11" x="512.43" y="703.07" width="130" height="6" rx="2" ry="2"/>
+  <rect class="st1" x="512.43" y="715.07" width="40" height="10" rx="2" ry="2"/>
+  <rect class="st1" x="620.43" y="713.07" width="58" height="16" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(625.71 724.07)"><tspan x="0" y="0">Buy Now</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st4" transform="translate(672.91 564.07)"><tspan x="0" y="0">⑤</tspan></text>
+    <text class="st3" transform="translate(684.91 564.07)"><tspan x="0" y="0" xml:space="preserve"> Products</tspan></text>
+  </g>
+  <rect class="st11" x="102.43" y="767.07" width="640" height="184" rx="4" ry="4"/>
+  <rect class="st0" x="322.43" y="781.07" width="200" height="14" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(364.29 792.07)"><tspan x="0" y="0">WHAT PEOPLE SAY</tspan></text>
+  </g>
+  <rect class="st0" x="118.43" y="803.07" width="608" height="120" rx="3" ry="3"/>
+  <rect class="st1" x="218.43" y="815.07" width="20" height="16" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(226.08 826.07)"><tspan x="0" y="0">&quot;</tspan></text>
+  </g>
+  <rect class="st11" x="162.43" y="837.07" width="480" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="182.43" y="849.07" width="440" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="202.43" y="861.07" width="400" height="8" rx="2" ry="2"/>
+  <rect class="st1" x="362.43" y="879.07" width="120" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="376.43" y="891.07" width="92" height="6" rx="2" ry="2"/>
+  <path class="st0" d="M133.43,843.07h0c8.28,0,15,6.72,15,15h0c0,8.28-6.72,15-15,15h0c-8.28,0-15-6.72-15-15h0c0-8.28,6.72-15,15-15Z"/>
+  <g class="st8">
+    <text class="st3" transform="translate(131.53 861.07)"><tspan x="0" y="0">‹</tspan></text>
+  </g>
+  <path class="st0" d="M711.43,843.07h0c8.28,0,15,6.72,15,15h0c0,8.28-6.72,15-15,15h0c-8.28,0-15-6.72-15-15h0c0-8.28,6.72-15,15-15Z"/>
+  <g class="st8">
+    <text class="st3" transform="translate(709.53 861.07)"><tspan x="0" y="0">›</tspan></text>
+  </g>
+  <path class="st1" d="M402.43,915.07h14c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-14c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+  <path class="st0" d="M426.43,915.07h6c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-6c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+  <path class="st0" d="M442.43,915.07h6c1.1,0,2,.9,2,2h0c0,1.1-.9,2-2,2h-6c-1.1,0-2-.9-2-2h0c0-1.1.9-2,2-2Z"/>
+  <g class="st8">
+    <text class="st4" transform="translate(673.59 780.07)"><tspan x="0" y="0">⑥</tspan></text>
+    <text class="st3" transform="translate(685.59 780.07)"><tspan x="0" y="0" xml:space="preserve"> Carousel</tspan></text>
+  </g>
+  <line class="st9" x1="118.43" y1="931.07" x2="726.43" y2="931.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(343.79 941.07)"><tspan x="0" y="0">all slides = fixed 380px height</tspan></text>
+  </g>
+  <rect class="st11" x="102.43" y="959.07" width="640" height="220" rx="4" ry="4"/>
+  <rect class="st0" x="302.43" y="973.07" width="240" height="14" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(362.73 985.07)"><tspan x="0" y="0">CORE CAPABILITIES</tspan></text>
+  </g>
+  <rect class="st0" x="118.43" y="997.07" width="150" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(144.22 1006.07)"><tspan x="0" y="0">Noise Cancellation</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="1011.07" width="280" height="5"/>
+  <rect class="st10" x="118.43" y="1011.07" width="245" height="5"/>
+  <rect class="st0" x="118.43" y="1024.07" width="150" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(137.87 1033.07)"><tspan x="0" y="0">Acoustic Engineering</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="1038.07" width="280" height="5"/>
+  <rect class="st10" x="118.43" y="1038.07" width="230" height="5"/>
+  <rect class="st0" x="118.43" y="1051.07" width="150" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(154.05 1060.07)"><tspan x="0" y="0">Wireless Audio</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="1065.07" width="280" height="5"/>
+  <rect class="st10" x="118.43" y="1065.07" width="210" height="5"/>
+  <rect class="st0" x="118.43" y="1078.07" width="150" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(158.26 1087.07)"><tspan x="0" y="0">Spatial Audio</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="1091.07" width="280" height="5"/>
+  <rect class="st10" x="118.43" y="1091.07" width="194" height="5"/>
+  <rect class="st0" x="118.43" y="1104.07" width="150" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(150.9 1113.07)"><tspan x="0" y="0">Power Efficiency</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="1117.07" width="280" height="5"/>
+  <rect class="st10" x="118.43" y="1117.07" width="176" height="5"/>
+  <rect class="st11" x="444.43" y="997.07" width="120" height="68" rx="3" ry="3"/>
+  <path class="st0" d="M474.43,1011.07h0c6.63,0,12,5.37,12,12h0c0,6.63-5.37,12-12,12h0c-6.63,0-12-5.37-12-12h0c0-6.63,5.37-12,12-12Z"/>
+  <rect class="st0" x="452.43" y="1041.07" width="84" height="11.76" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(460.93 1051.07)"><tspan x="0" y="0">Headphones</tspan></text>
+  </g>
+  <rect class="st11" x="576.43" y="997.07" width="120" height="68" rx="3" ry="3"/>
+  <path class="st0" d="M606.43,1011.07h0c6.63,0,12,5.37,12,12h0c0,6.63-5.37,12-12,12h0c-6.63,0-12-5.37-12-12h0c0-6.63,5.37-12,12-12Z"/>
+  <rect class="st0" x="584.43" y="1041.07" width="84" height="11.76" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(602.77 1050.07)"><tspan x="0" y="0">Speakers</tspan></text>
+  </g>
+  <rect class="st11" x="444.43" y="1075.07" width="120" height="68" rx="3" ry="3"/>
+  <path class="st0" d="M474.43,1089.07h0c6.63,0,12,5.37,12,12h0c0,6.63-5.37,12-12,12h0c-6.63,0-12-5.37-12-12h0c0-6.63,5.37-12,12-12Z"/>
+  <rect class="st0" x="452.43" y="1119.07" width="87.8" height="11.5" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(474.43 1128.68)"><tspan x="0" y="0">Earbuds</tspan></text>
+  </g>
+  <rect class="st11" x="576.43" y="1075.07" width="120" height="68" rx="3" ry="3"/>
+  <path class="st0" d="M606.43,1089.07h0c6.63,0,12,5.37,12,12h0c0,6.63-5.37,12-12,12h0c-6.63,0-12-5.37-12-12h0c0-6.63,5.37-12,12-12Z"/>
+  <rect class="st0" x="584.43" y="1119.07" width="84" height="11.5" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(593.49 1128.07)"><tspan x="0" y="0">Smart Audio</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st4" transform="translate(693.25 972.07)"><tspan x="0" y="0">⑦</tspan></text>
+    <text class="st3" transform="translate(705.25 972.07)"><tspan x="0" y="0" xml:space="preserve"> Skills</tspan></text>
+  </g>
+  <rect class="st11" x="102.43" y="1195.07" width="640" height="200" rx="4" ry="4"/>
+  <rect class="st0" x="118.43" y="1211.07" width="120" height="176" rx="3" ry="3"/>
+  <line class="st9" x1="118.43" y1="1211.07" x2="238.43" y2="1387.07"/>
+  <line class="st9" x1="238.43" y1="1211.07" x2="118.43" y2="1387.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(168.28 1302.07)"><tspan x="0" y="0">img</tspan></text>
+  </g>
+  <rect class="st0" x="244.43" y="1211.07" width="120" height="85" rx="3" ry="3"/>
+  <line class="st9" x1="244.43" y1="1211.07" x2="364.43" y2="1296.07"/>
+  <line class="st9" x1="364.43" y1="1211.07" x2="244.43" y2="1296.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(294.28 1256.07)"><tspan x="0" y="0">img</tspan></text>
+  </g>
+  <rect class="st0" x="244.43" y="1302.07" width="120" height="85" rx="3" ry="3"/>
+  <line class="st9" x1="244.43" y1="1302.07" x2="364.43" y2="1387.07"/>
+  <line class="st9" x1="364.43" y1="1302.07" x2="244.43" y2="1387.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(294.28 1347.07)"><tspan x="0" y="0">img</tspan></text>
+  </g>
+  <rect class="st1" x="382.43" y="1212.76" width="68" height="12.3" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(391.78 1223.07)"><tspan x="0" y="0">About Us</tspan></text>
+  </g>
+  <rect class="st0" x="382.43" y="1233.07" width="180" height="16" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(431.34 1244.07)"><tspan x="0" y="0">SIX DECADES</tspan></text>
+  </g>
+  <rect class="st10" x="382.43" y="1255.07" width="36" height="3"/>
+  <rect class="st11" x="382.43" y="1265.07" width="320" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="382.43" y="1276.07" width="310" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="382.43" y="1287.07" width="300" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="382.43" y="1298.07" width="290" height="7" rx="2" ry="2"/>
+  <rect class="st0" x="382.43" y="1321.07" width="100" height="44" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st7" transform="translate(417.34 1341.07)"><tspan x="0" y="0">1964</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st3" transform="translate(408.99 1357.07)"><tspan x="0" y="0">Founded</tspan></text>
+  </g>
+  <rect class="st0" x="492.43" y="1321.07" width="100" height="44" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st7" transform="translate(530.61 1341.07)"><tspan x="0" y="0">MIT</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st3" transform="translate(523.44 1357.07)"><tspan x="0" y="0">Origins</tspan></text>
+  </g>
+  <rect class="st1" x="382.43" y="1375.07" width="90" height="24" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(394.37 1390.07)"><tspan x="0" y="0">Get in Touch</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st4" transform="translate(670.09 1208.07)"><tspan x="0" y="0">⑧</tspan></text>
+    <text class="st3" transform="translate(682.09 1208.07)"><tspan x="0" y="0" xml:space="preserve"> About Us</tspan></text>
+  </g>
+  <rect class="st11" x="102.43" y="1411.07" width="640" height="260" rx="4" ry="4"/>
+  <rect class="st0" x="302.43" y="1427.07" width="240" height="14" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(381.76 1438.07)"><tspan x="0" y="0">CONTACT US</tspan></text>
+  </g>
+  <rect class="st0" x="118.43" y="1453.07" width="150" height="12" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(137.88 1463.07)"><tspan x="0" y="0">Contact info heading</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="1473.07" width="140" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="118.43" y="1484.07" width="130" height="7" rx="2" ry="2"/>
+  <path class="st0" d="M130.43,1501.07h0c6.63,0,12,5.37,12,12h0c0,6.63-5.37,12-12,12h0c-6.63,0-12-5.37-12-12h0c0-6.63,5.37-12,12-12Z"/>
+  <rect class="st11" x="150.43" y="1503.07" width="110" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="150.43" y="1514.07" width="90" height="7" rx="2" ry="2"/>
+  <path class="st0" d="M130.43,1535.07h0c6.63,0,12,5.37,12,12h0c0,6.63-5.37,12-12,12h0c-6.63,0-12-5.37-12-12h0c0-6.63,5.37-12,12-12Z"/>
+  <rect class="st11" x="150.43" y="1537.07" width="110" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="150.43" y="1548.07" width="90" height="7" rx="2" ry="2"/>
+  <path class="st0" d="M130.43,1569.07h0c6.63,0,12,5.37,12,12h0c0,6.63-5.37,12-12,12h0c-6.63,0-12-5.37-12-12h0c0-6.63,5.37-12,12-12Z"/>
+  <rect class="st11" x="150.43" y="1571.07" width="110" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="150.43" y="1582.07" width="90" height="7" rx="2" ry="2"/>
+  <rect class="st0" x="292.43" y="1453.07" width="430" height="208" rx="4" ry="4"/>
+  <rect class="st11" x="304.43" y="1465.07" width="195" height="26" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(374.71 1481.07)"><tspan x="0" y="0">Full Name</tspan></text>
+  </g>
+  <rect class="st11" x="511.43" y="1465.07" width="195" height="26" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(571.37 1481.07)"><tspan x="0" y="0">Email Address</tspan></text>
+  </g>
+  <rect class="st11" x="304.43" y="1499.07" width="195" height="26" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(384.63 1515.07)"><tspan x="0" y="0">Phone</tspan></text>
+  </g>
+  <rect class="st11" x="511.43" y="1499.07" width="195" height="26" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(588.92 1515.07)"><tspan x="0" y="0">Subject</tspan></text>
+  </g>
+  <rect class="st11" x="304.43" y="1533.07" width="402" height="52" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(459.16 1561.07)"><tspan x="0" y="0">Message textarea</tspan></text>
+  </g>
+  <rect class="st11" x="304.43" y="1593.07" width="12" height="12" rx="2" ry="2"/>
+  <rect class="st11" x="322.43" y="1595.07" width="180" height="8" rx="2" ry="2"/>
+  <rect class="st1" x="304.43" y="1613.07" width="402" height="32" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st7" transform="translate(460.82 1632.07)"><tspan x="0" y="0">Send Message</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st4" transform="translate(678.36 1424.07)"><tspan x="0" y="0">⑨</tspan></text>
+    <text class="st3" transform="translate(690.36 1424.07)"><tspan x="0" y="0" xml:space="preserve"> Contact</tspan></text>
+  </g>
+  <rect class="st11" x="102.43" y="1687.07" width="640" height="194" rx="4" ry="4"/>
+  <rect class="st0" x="118.43" y="1703.07" width="70" height="20" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st7" transform="translate(136.88 1716.07)"><tspan x="0" y="0">BOSE</tspan></text>
+  </g>
+  <rect class="st11" x="118.43" y="1729.07" width="140" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="118.43" y="1741.07" width="130" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="118.43" y="1753.07" width="120" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="118.43" y="1769.07" width="22" height="22" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(124.44 1783.07)"><tspan x="0" y="0">ig</tspan></text>
+  </g>
+  <rect class="st11" x="146.43" y="1769.07" width="22" height="22" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(151.06 1783.07)"><tspan x="0" y="0">tw</tspan></text>
+  </g>
+  <rect class="st11" x="174.43" y="1769.07" width="22" height="22" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(180.02 1783.07)"><tspan x="0" y="0">fb</tspan></text>
+  </g>
+  <rect class="st11" x="202.43" y="1769.07" width="22" height="22" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(208.49 1783.07)"><tspan x="0" y="0">yt</tspan></text>
+  </g>
+  <rect class="st1" x="302.43" y="1703.07" width="60" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(309.19 1711.07)"><tspan x="0" y="0">Products</tspan></text>
+  </g>
+  <rect class="st11" x="302.43" y="1719.07" width="90" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="302.43" y="1731.07" width="80" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="302.43" y="1743.07" width="86" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="302.43" y="1755.07" width="74" height="7" rx="2" ry="2"/>
+  <rect class="st1" x="432.43" y="1703.07" width="60" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(441.16 1711.07)"><tspan x="0" y="0">Support</tspan></text>
+  </g>
+  <rect class="st11" x="432.43" y="1719.07" width="80" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="432.43" y="1731.07" width="70" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="432.43" y="1743.07" width="86" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="432.43" y="1755.07" width="60" height="7" rx="2" ry="2"/>
+  <rect class="st1" x="552.43" y="1703.07" width="70" height="10" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st3" transform="translate(559.04 1711.07)"><tspan x="0" y="0">Newsletter</tspan></text>
+  </g>
+  <rect class="st11" x="552.43" y="1719.07" width="160" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="552.43" y="1731.07" width="140" height="7" rx="2" ry="2"/>
+  <rect class="st11" x="552.43" y="1745.07" width="110" height="22" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(577.72 1758.07)"><tspan x="0" y="0">email input</tspan></text>
+  </g>
+  <rect class="st1" x="668.43" y="1745.07" width="50" height="22" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(683.32 1758.07)"><tspan x="0" y="0">Sub</tspan></text>
+  </g>
+  <line class="st9" x1="118.43" y1="1799.07" x2="726.43" y2="1799.07"/>
+  <rect class="st11" x="118.43" y="1807.07" width="180" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="502.43" y="1807.07" width="70" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="580.43" y="1807.07" width="60" height="8" rx="2" ry="2"/>
+  <rect class="st11" x="648.43" y="1807.07" width="70" height="8" rx="2" ry="2"/>
+  <g class="st8">
+    <text class="st4" transform="translate(684.96 1700.07)"><tspan x="0" y="0">⑩</tspan></text>
+    <text class="st3" transform="translate(696.96 1700.07)"><tspan x="0" y="0" xml:space="preserve"> Footer</tspan></text>
+  </g>
+  <line class="st9" x1="102.43" y1="1897.07" x2="742.43" y2="1897.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(402.87 1917.07)"><tspan x="0" y="0">Legend</tspan></text>
+  </g>
+  <rect class="st11" x="122.43" y="1929.07" width="40" height="18" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(172.43 1941.07)"><tspan x="0" y="0">Layout block</tspan></text>
+  </g>
+  <rect class="st0" x="262.43" y="1929.07" width="40" height="18" rx="3" ry="3"/>
+  <line class="st9" x1="262.43" y1="1929.07" x2="302.43" y2="1947.07"/>
+  <line class="st9" x1="302.43" y1="1929.07" x2="262.43" y2="1947.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(312.43 1941.07)"><tspan x="0" y="0">Image placeholder (img src=&quot;&quot;)</tspan></text>
+  </g>
+  <rect class="st1" x="522.43" y="1929.07" width="40" height="18" rx="3" ry="3"/>
+  <g class="st8">
+    <text class="st3" transform="translate(572.43 1941.07)"><tspan x="0" y="0">Button / accent element</tspan></text>
+  </g>
+  <line class="st9" x1="122.43" y1="1965.07" x2="162.43" y2="1965.07"/>
+  <g class="st8">
+    <text class="st3" transform="translate(172.43 1969.07)"><tspan x="0" y="0">Annotation / dimension guide</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st3" transform="translate(194.3 1991.07)"><tspan x="0" y="0">All img src=&quot;&quot; are left blank — add filenames after placing images in the project folder</tspan></text>
+  </g>
+  <path class="st2" d="M-537.57,21.07"/>
+  <path class="st9" d="M417.03,2017.47l5.4,3.6-5.4,3.6"/>
+  <path class="st9" d="M422.43,2021.07" marker-end="url(#arrow)"/>
+  <g class="st8">
+    <text class="st3" transform="translate(352.56 2033.07)"><tspan x="0" y="0">Page scrolls top → bottom</tspan></text>
+  </g>
+  <g class="st8">
+    <text class="st3" transform="translate(141.18 2049.07)"><tspan x="0" y="0">Total sections: 10 — Navbar · Hero · Ticker · About · Products · Carousel · Skills · About Us · Contact · Footer</tspan></text>
+  </g>
+</svg>
